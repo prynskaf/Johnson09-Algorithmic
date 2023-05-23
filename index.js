@@ -136,3 +136,49 @@ function rollThreeDice() {
   
   console.log(rollThreeDice()); // outputs "Two identical values."
   
+  //Write an algorithm which given the number of a day returns its name.
+
+  const dayNumber = new Date();
+  const dayNames = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ]
+ console.log("Day: "  + dayNumber.getDay() , "and Today is:", dayNames[1] ); 
+ // returns  Day: 2 and Today is: Tuesday
+
+
+ //A print shop charges 0.12€ the ten first copy, 0.11 € 
+//  the next 20 and 0.10 € from there. Write an algorithm which given a 
+//  number of copies and calculates the price
+function calculatePrice(copies) {
+    let price = 0;
+  
+    if (copies >= 10) {
+      const firstTen = Math.min(copies, 10);
+      price += firstTen * 0.12;
+      copies -= firstTen;
+    }
+  
+    if (copies > 0) {
+      const nextTwenty = Math.min(copies, 20);
+      price += nextTwenty * 0.11;
+      copies -= nextTwenty;
+    }
+  
+    if (copies > 0) {
+      price += copies * 0.10;
+    }
+  
+    return price.toFixed(2);
+  }
+
+  const numCopies = 35;
+  const totalPrice = calculatePrice(numCopies);
+  console.log(`The Number of copies is: ${numCopies} \nThe Total price: ${totalPrice}€`);
+
+  
