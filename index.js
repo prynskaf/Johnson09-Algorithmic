@@ -1,3 +1,7 @@
+
+
+
+
 /*
 
 /*
@@ -258,17 +262,41 @@ conditions
 //ARRAY
 
 //Write an algorithm which prints everything in an array
-function maximum(){
-const arr =  [
-    10,
-    20,
-    30,
-    40,
-    50,
-    60,
-    70
+// function maximum(){
+// const arr =  [
+//     10,
+//     20,
+//     30,
+//     40,
+//     50,
+//     60,
+//     70
 
-]
-console.log("numbers of array:",  arr  , "Length of arrays: " , arr.length);
-}
-maximum();  // returns 70
+// ]
+// console.log("numbers of array:",  arr  , "Length of arrays: " , arr.length );
+// }
+// maximum();  // returns 70  //numbers of items in the arrays
+
+// Write an algorithm which receives an array of integers and prints its maximum.
+
+
+// var question = parseInt(readline.createInterface("what is your age: "));
+// console.log('your age is: ' , question);
+
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Radius : ", (num1) => {
+  var num2 = num1 * num1;
+  var surface = Math.PI * num2;
+  console.log(surface);
+  rl.close();
+});
+
+
+
