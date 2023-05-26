@@ -59,35 +59,35 @@ function rollThreeDice() {
   
   //Write an algorithm which given the number of a day returns its name.
 
-  const dayNumber = new Date();
-  const dayNames = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ]
- console.log("Day: "  + dayNumber.getDay() , "and Today is:", dayNames[1] ); 
-//  returns  Day: 2 and Today is: Tuesday
+//   const dayNumber = new Date();
+//   const dayNames = [
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//     "Sunday",
+//   ]
+//  console.log("Day: "  + dayNumber.getDay() , "and Today is:", dayNames[1] ); 
+ // returns  Day: 2 and Today is: Tuesday
 
 
  //A print shop charges 0.12€ the ten first copy, 0.11 € 
 //  the next 20 and 0.10 € from there. Write an algorithm which given a 
 //  number of copies and calculates the price
-function calcShopPrice() {
-    const amount = 19;  // 19
-    let price = 0;
-    if (amount < 10) {
-      price = amount * 0.12;
-      console.log(price);
-    } else if (amount >= 10 && amount <= 20) {
-      price = amount * 0.11;
-      console.log(price);
-    } else {
-      price = amount * 0.1;
-      console.log(price);
-    }
-  }
-  calcShopPrice(); // returns 2.09
+// function calcShopPrice() {
+//     const amount = 19;  // 19
+//     let price = 0;
+//     if (amount < 10) {
+//       price = amount * 0.12;
+//       console.log(price);
+//     } else if (amount >= 10 && amount <= 20) {
+//       price = amount * 0.11;
+//       console.log(price);
+//     } else {
+//       price = amount * 0.1;
+//       console.log(price);
+//     }
+//   }
+//   calcShopPrice(); // returns 2.09
